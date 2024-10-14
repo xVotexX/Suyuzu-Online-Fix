@@ -13,6 +13,7 @@ Suyuzu Online-Fix is a tool designed to fix the multiplayer of certain Switch Em
 
 ---
 ![image](https://github.com/user-attachments/assets/6088a9e5-23f7-448b-be17-53eee77fc184)
+![image](https://github.com/user-attachments/assets/6567f38f-de16-40f6-a722-da868028bc26)
 
 ---
 
