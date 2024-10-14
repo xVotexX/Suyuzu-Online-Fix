@@ -1,6 +1,6 @@
 # Suyuzu Online-Fix
 
-Suyuzu Online Fix is a tool designed to fix the multiplayer of certain Switch Emulators.
+Suyuzu Online-Fix is a tool designed to fix the multiplayer of certain Switch Emulators.
 
 #### Supported Emulators:
 - Yuzu
