@@ -27,4 +27,4 @@ By using this tool, you agree that the author will not be held liable for any da
 ### License
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 You are free to use, modify, and distribute this software under the terms of the GPLv3 license. However, any modifications or derivative works must also be licensed under the GPLv3, and you must disclose the source code when distributing the software.
-For more details, refer to the [LICENSE](LICENSE) file.
+For more details, refer to the [LICENSE](LICENSE.txt) file.
