@@ -7,6 +7,13 @@ Suyuzu Online-Fix is a tool designed to fix the multiplayer of certain Switch Em
 - Suyu
 - Sudachi
 
+#### To do:
+- *Change Username* Feature
+
+
+---
+![image](https://github.com/user-attachments/assets/6088a9e5-23f7-448b-be17-53eee77fc184)
+
 ---
 
 ### Disclaimer
