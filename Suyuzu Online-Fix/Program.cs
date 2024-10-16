@@ -31,13 +31,13 @@ namespace Suyuzu_Online_Fix
 
             switch (emuChoice)
             {
-                case "Yuzu":
+                case "[White]Yuzu[/]":
                     Fixes.YuzuFix.ApplyYuzuFix();
                     break;
-                case "Suyu":
+                case "[White]Suyu[/]":
                     Fixes.SuyuFix.ApplySuyuFix();
                     break;
-                case "Sudachi":
+                case "[White]Sudachi[/]\n\n":
                     Fixes.SudachiFix.ApplySudachiFix();
                     break;
             }
