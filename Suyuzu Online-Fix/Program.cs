@@ -4,14 +4,16 @@ namespace Suyuzu_Online_Fix
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            Console.Title = "Suyuzu v1.1.0";
             ShowMenu();
         }
 
         public static void ShowMenu() 
         {
-            // Show Menu
+            // Top Part
             AnsiConsole.Write(
                 new FigletText("Suyuzu  Online-Fix")
                     .Centered()
@@ -22,6 +24,7 @@ namespace Suyuzu_Online_Fix
             rule.Style = Style.Parse("BlueViolet");
             AnsiConsole.Write(rule);
 
+            // Choice Menu
             var emuChoice = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
                     .Title("")
@@ -39,6 +42,9 @@ namespace Suyuzu_Online_Fix
                     break;
                 case "[White]Sudachi[/]\n\n":
                     Fixes.SudachiFix.ApplySudachiFix();
+                    break;
+                case "[White]Change Username[/]":
+                    ChangeUsername.UsernamePrompt();
                     break;
             }
         }

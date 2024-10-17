@@ -57,22 +57,54 @@ namespace Suyuzu_Online_Fix.Fixes
                                 {
                                     lines[i] = "enable_telemetry=false";
                                 }
+
+                                if (!string.IsNullOrEmpty(ChangeUsername.Username) && !string.IsNullOrEmpty(ChangeUsername.Token))
+                                {
+                                    if (lines[i].StartsWith("yuzu_username\\default="))
+                                    {
+                                        lines[i] = "yuzu_username\\default=false";
+                                    }
+                                    else if (lines[i].StartsWith("yuzu_username="))
+                                    {
+                                        lines[i] = $"yuzu_username={ChangeUsername.Username}";
+                                    }
+                                    else if (lines[i].StartsWith("yuzu_token\\default="))
+                                    {
+                                        lines[i] = "yuzu_token\\default=false";
+                                    }
+                                    else if (lines[i].StartsWith("yuzu_token="))
+                                    {
+                                        lines[i] = $"yuzu_token={ChangeUsername.Token}";
+                                    }
+                                }
                             }
 
                             // Save Changes
                             AnsiConsole.MarkupLine("[BlueViolet]LOG:[/] [White]Saving changes...[/]");
                             File.WriteAllLines(configPath, lines);
+
+                            var rule = new Rule();
+                            rule.Style = Style.Parse("BlueViolet");
+                            AnsiConsole.Write(rule);
+
                             AnsiConsole.MarkupLine("");
                             AnsiConsole.MarkupLine("[White]Online-Fix[/] [green]successfully applied![/]");
+
+                            if (!string.IsNullOrEmpty(ChangeUsername.Username) && !string.IsNullOrEmpty(ChangeUsername.Token))
+                            {
+                                AnsiConsole.MarkupLine($"[White]New Username:[/] [gold1]{ChangeUsername.Username}[/]");
+                                AnsiConsole.MarkupLine($"[White]New Token:[/] [gold1]{ChangeUsername.Token}[/]");
+                            }
                         }
                     });
             }
             catch (Exception ex)
             {
                 AnsiConsole.MarkupLine("");
-                AnsiConsole.MarkupLine($"[red1]An error occurred:[/]\n[maroon]{ex.Message}[/]\n");
+                AnsiConsole.MarkupLine($"[red1]An error occurred:[/]\n[maroon]{ex.Message}[/]");
             }
 
+            AnsiConsole.MarkupLine("");
             AnsiConsole.MarkupLine("[White]Press[/] [Gold1]enter[/] [White]to return...[/]");
             Console.ReadKey();
             Console.Clear();
