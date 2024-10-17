@@ -8,7 +8,7 @@ Suyuzu Online-Fix is a tool designed to fix the multiplayer of certain Switch Em
 - Sudachi
 
 #### To do:
-- ~~*Change Username* Feature~~ ✔️ <sub>*Added in v1.1.0*</sub>
+- ~~*Change Username* Feature~~ ✔️ <sub>*Added in [v1.1.0](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/tag/1.1.0)*</sub>
 - *Apply to all* Feature
 
 
