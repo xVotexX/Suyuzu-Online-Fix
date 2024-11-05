@@ -7,7 +7,7 @@ namespace Suyuzu_Online_Fix
 
         static void Main(string[] args)
         {
-            Console.Title = "Suyuzu v1.1.0";
+            Console.Title = "Suyuzu v1.2.0";
             ShowMenu();
         }
 
@@ -28,7 +28,7 @@ namespace Suyuzu_Online_Fix
             var emuChoice = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
                     .Title("")
-                    .AddChoiceGroup("[BlueViolet]Emulators:[/]\n", "[White]Yuzu[/]", "[White]Suyu[/]", "[White]Sudachi[/]\n\n")
+                    .AddChoiceGroup("[BlueViolet]Emulators:[/]\n", "[White]Yuzu[/]", "[White]Suyu[/]", "[White]Sudachi[/]", "[White]Apply to all[/]\n\n")
                     .AddChoiceGroup("[BlueViolet]Settings:[/]\n", "[White]Change Username[/]")
                     .HighlightStyle(new Style(foreground: Color.BlueViolet)));
 
@@ -40,8 +40,11 @@ namespace Suyuzu_Online_Fix
                 case "[White]Suyu[/]":
                     Fixes.SuyuFix.ApplySuyuFix();
                     break;
-                case "[White]Sudachi[/]\n\n":
+                case "[White]Sudachi[/]":
                     Fixes.SudachiFix.ApplySudachiFix();
+                    break;
+                case "[White]Apply to all[/]\n\n":
+                    Fixes.Ata.ApplyToAll();
                     break;
                 case "[White]Change Username[/]":
                     ChangeUsername.UsernamePrompt();

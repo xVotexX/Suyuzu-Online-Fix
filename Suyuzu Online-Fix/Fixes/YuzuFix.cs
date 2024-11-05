@@ -29,18 +29,18 @@ namespace Suyuzu_Online_Fix.Fixes
                             AnsiConsole.MarkupLine("");
                             AnsiConsole.MarkupLine("[White]Online-Fix[/] [red1]could not be applied![/]");
                         }
-                        else 
+                        else
                         {
                             AnsiConsole.MarkupLine("[BlueViolet]LOG:[/] [White]Config file found...[/]");
 
                             // Read config file
                             AnsiConsole.MarkupLine("[BlueViolet]LOG:[/] [White]Reading config file...[/]");
                             string[] lines = File.ReadAllLines(configPath);
-                            ctx.Status("[Gold1]Applying Online-Fix...[/]");
+                            ctx.Status("[Gold1]Applying Online-Fix[/]");
                             AnsiConsole.MarkupLine("[BlueViolet]LOG:[/] [White]Editing config file...[/]");
                             for (int i = 0; i < lines.Length; i++)
                             {
-                                // Edit config file
+                                // Modify API URL and telemetry settings
                                 if (lines[i].StartsWith("web_api_url\\default="))
                                 {
                                     lines[i] = "web_api_url\\default=false";
@@ -58,6 +58,7 @@ namespace Suyuzu_Online_Fix.Fixes
                                     lines[i] = "enable_telemetry=false";
                                 }
 
+                                // Apply username and token if set
                                 if (!string.IsNullOrEmpty(ChangeUsername.Username) && !string.IsNullOrEmpty(ChangeUsername.Token))
                                 {
                                     if (lines[i].StartsWith("yuzu_username\\default="))
