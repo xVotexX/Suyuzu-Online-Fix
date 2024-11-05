@@ -14,14 +14,9 @@
 
 
 #### Supported Emulators:
-- Yuzu
-- Suyu
-- Sudachi
-
-#### To do List:
-- ~~*Change Username* Feature~~ ✔️ <sub>*Added in [v1.1.0](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/tag/1.1.0)*</sub>
-- *Apply to all* Feature
-
+- [x] Yuzu
+- [x] Suyu
+- [x] Sudachi
 
 ---
 ![image](https://github.com/user-attachments/assets/6088a9e5-23f7-448b-be17-53eee77fc184)
