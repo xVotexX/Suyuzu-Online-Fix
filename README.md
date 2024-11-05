@@ -1,14 +1,26 @@
-# Suyuzu Online-Fix
+<h1 align='center'>
+  Suyuzu Online-Fix
+</h1>
 
-Suyuzu Online-Fix is a tool designed to fix the multiplayer of certain Switch Emulators.
+<p align='center'>
+  A tool designed to fix the multiplayer of certain Switch Emulators.
+</p>
+
+#### Usage:
+1. Download the [Latest Release](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/latest)
+2. Start the Tool
+3. Set a Username (Optional)
+4. Select the emulator you use to apply the fix
+
 
 #### Supported Emulators:
 - Yuzu
 - Suyu
 - Sudachi
 
-#### To do:
-- *Change Username* Feature
+#### To do List:
+- ~~*Change Username* Feature~~ ✔️ <sub>*Added in [v1.1.0](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/tag/1.1.0)*</sub>
+- *Apply to all* Feature
 
 
 ---
