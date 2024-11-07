@@ -7,7 +7,7 @@
 </p>
 
 #### Usage:
-1. Download the [Latest Release](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/latest)
+1. Download the [Latest Release](https://github.com/xVotexX/Suyuzu-Online-Fix/releases/latest/download/Suyuzu.Online-Fix.exe)
 2. Start the Tool
 3. Set a Username (Optional)
 4. Select the emulator you use to apply the fix
